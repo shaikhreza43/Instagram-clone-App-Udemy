@@ -1,0 +1,30 @@
+{
+  "name": "instagram-clone-app",
+  "version": "1.0.0",
+  "description": "A simple clone app of instagram using MERN stack technologies",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "Node.js",
+    "Express.js",
+    "Mongoose",
+    "JsonWebtoken",
+    "React.js",
+    "MongoDb",
+    "Atlas"
+  ],
+  "author": "Shaikh Ahmed Reza",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
