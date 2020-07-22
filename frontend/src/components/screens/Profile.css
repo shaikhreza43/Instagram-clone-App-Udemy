@@ -1,0 +1,37 @@
+div.profile_pic_div{
+
+}
+
+div.img-user-name-div{
+    display: flex;
+    justify-content: space-around;
+    margin: 18px 0px;
+    border-bottom: 1px solid grey;
+}
+
+div.align-row-wise{
+    display: flex;
+    justify-content: space-between;
+    width: 108%;
+}
+
+img.profile_pic_styling{
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+}
+
+div.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+img.img-gallery-items{
+    width: 30%;
+}
+
+div.profile-parent-div{
+    max-width: 550px;
+    margin: 0px auto;
+}

@@ -1,0 +1,14 @@
+.my-card-login{
+    margin-top: 30px;
+}
+.login-card{
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    bottom: 10px;
+    left: 35%;
+    right: auto;
+
+}
