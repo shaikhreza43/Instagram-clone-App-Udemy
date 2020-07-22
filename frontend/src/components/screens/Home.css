@@ -1,0 +1,12 @@
+
+.home-card{
+    max-width: 500px;
+    height: max-content;
+    position: relative;
+    margin: 26px auto !important;
+   
+}
+
+.heart-icon-color{
+    color: red;
+}

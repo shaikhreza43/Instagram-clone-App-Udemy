@@ -7,6 +7,7 @@ import Login from './components/Login';
 import Register from './components/Register';
 
 import './App.css';
+import CreatePost from './components/screens/Create-Post';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
             <Route exact path="/login" component={Login}></Route>
             <Route exact path="/register" component={Register}></Route>
             <Route exact path="/profile" component={Profile}></Route>
+            <Route exact path="/create-post" component={CreatePost}></Route>
             <Redirect from="*"  to="/"></Redirect>
           </Switch>
         </Suspense>
