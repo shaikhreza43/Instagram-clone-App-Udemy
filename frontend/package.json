@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "proxy":"https://instagram-clone-app-backend.herokuapp.com/",
+  "proxy":"http://localhost:5000",
   "dependencies": {
     "cors": "^2.8.5",
     "materialize-css": "^1.0.0-rc.2",

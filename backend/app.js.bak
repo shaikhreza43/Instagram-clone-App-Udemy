@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const { Heroku_Mongo_URI } = require('./config/keys');
+const { ATLAS_URI } = require('./config/keys');
 
 const app = express();//initialize express
 
@@ -11,7 +11,7 @@ const PORT = 5000;
 //     .catch((err) => { console.log('error ' + err) });
 
 
-mongoose.connect(Heroku_Mongo_URI,{useNewUrlParser:true,useUnifiedTopology:true});
+mongoose.connect(ATLAS_URI,{useNewUrlParser:true,useUnifiedTopology:true});
 mongoose.connection.on('connected',()=>{
     console.log('Successfully Connected to mongo db atlas');
 });
@@ -25,22 +25,21 @@ require('./models/posts');
 
 app.use(express.json());
 
-app.get('/',(req,res)=>{
-    console.log('/ Route Handler executed...')
-    res.status(200).json({message:'Welcome to My Instagram!'});
-})
-
 app.use(require('./routes/user-routes'));
 app.use(require('./routes/posts-routes'));
 
 
-// const someMiddleWare = (req, res, next) => {
-//     console.log('Some Middleware!');
-//     next();
-// }
+const someMiddleWare = (req, res, next) => {
+    console.log('Some Middleware!');
+    next();
+}
 
-// app.use(someMiddleWare);
+app.use(someMiddleWare);
 
+
+app.get('/', (req, res) => {
+    res.json({ message: 'Welcome to Instagram App.' });
+});
 
 app.listen(PORT, () => {
     console.log(`server is running on port ${PORT}`);
